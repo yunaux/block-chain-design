@@ -1,0 +1,62 @@
+site_name: Nightscout
+theme:
+    name: material
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.code.annotate
+    logo: NS-logo.png
+    favicon: NS-logo-std.png
+    palette:
+      primary: black
+    nav_style: primary
+extra_css:
+    - css/admonitions.css
+markdown_extensions: 
+    - admonition
+    - toc:
+        permalink: ⌁
+
+nav:
+- Introduction:
+    - 'What is Nightscout?': 'index.md'
+    - 'How do I upload my data?': 'uploader/uploaders.md'
+- Install:
+    - 'DIY Overview': 'nightscout/insights.md'
+    - 'Classic DIY Installation': 'nightscout/new_user.md'
+    - 'Paid hosting overview': 'vendors/NSaaS.md'
+    - 'Paid hosting: T1Pal': 'vendors/T1Pal/new_user.md'
+    - 'Paid hosting: 10BE': 'vendors/10BE.md'
+- Configure:
+    - 'Configure your Nightscout': 'nightscout/setup_variables.md'
+    - 'Configure your Uploader': 'uploader/setup.md'
+    - 'Follower Devices': 'nightscout/downloaders.md'
+    - 'Nightscout on your watch': 'nightscout/wearable.md'
+    - 'Running multiple sites': 'nightscout/multiadmin.md'
+    - 'Closed-loop Systems': 'nightscout/close_loop.md'
+- Use:
+    - 'Discover your site': 'nightscout/discover.md'
+    - 'Secure your site': 'nightscout/security.md'
+    - 'Reports': 'nightscout/reports.md'
+    - 'Profile Editor': 'nightscout/profile_editor.md'
+    - 'Admin Tools': 'nightscout/admin_tools.md'
+    - 'Remote Notifications': 'nightscout/pushover.md'
+- Update:
+    - 'Updating your site': 'update/update.md'
+    - 'Redeploying': 'update/redeploy.md'
+    - 'Deploy another GitHub branch': 'update/dev_branch.md'
+    - 'Attach a new Atlas database': 'update/newdatabase.md'
+    - 'Update Heroku Stack': 'update/upd_stack.md'
+    - 'Downgrade': 'update/downgrade.md'
+    - 'Multiple Factor Authentication': 'vendors/heroku/index.md'
+- Troubleshoot:
+    - 'Troubleshooting': 'troubleshoot/troublehoot.md'
+    - 'Dexcom bridge': 'troubleshoot/dexcom_bridge.md'
+    - 'Connection failure': 'troubleshoot/connection_string.md'
+    - 'Cleanup': 'troubleshoot/cleanup.md'
+- Translation: 'translate.md'
